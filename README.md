@@ -1,2 +1,2 @@
-# cards
-object-oriented design concepts via cards game
+# Object Oriented Design
+Some classic questions on Object Orientend Programming
