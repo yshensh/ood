@@ -44,4 +44,18 @@ public class Spot {
         level.spotFreed();
         vehicle = null;
     }
+
+    public void print() {
+        if (vehicle == null) {
+            if (spotSize == VehicleSize.Compact) {
+                System.out.print("c ");
+            } else if (spotSize == VehicleSize.Large) {
+                System.out.print("l ");
+            } else if (spotSize == VehicleSize.Motorcycle) {
+                System.out.print("m ");
+            }
+        } else {
+            vehicle.print();
+        }
+    }
 }

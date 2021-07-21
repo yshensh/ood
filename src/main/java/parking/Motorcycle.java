@@ -8,6 +8,10 @@ public class Motorcycle extends Vehicle {
 
     @Override
     public boolean canFitInSpot(Spot spot) {
-        return false;
+        return spot.getSize() == VehicleSize.Motorcycle;
+    }
+
+    public void print() {
+        System.out.print("M ");
     }
 }

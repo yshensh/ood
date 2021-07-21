@@ -28,4 +28,6 @@ public abstract class Vehicle {
     }
 
     public abstract boolean canFitInSpot(Spot spot);
+
+    public abstract void print();
 }

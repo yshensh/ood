@@ -78,4 +78,16 @@ public class Level {
     public void spotFreed() {
         availableSpots++;
     }
+
+    public void print() {
+        int lastRow = -1;
+        for (int i = 0; i < spots.length; i++) {
+            Spot spot = spots[i];
+            if (spot.getRow() != lastRow) {
+                System.out.print("  ");
+                lastRow = spot.getRow();
+            }
+            spot.print();
+        }
+    }
 }

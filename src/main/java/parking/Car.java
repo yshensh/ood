@@ -8,6 +8,10 @@ public class Car extends Vehicle {
 
     @Override
     public boolean canFitInSpot(Spot spot) {
-        return false;
+        return spot.getSize() == VehicleSize.Compact;
+    }
+
+    public void print() {
+        System.out.print("C ");
     }
 }

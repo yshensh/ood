@@ -1,8 +1,5 @@
 package parking;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class ParkingLot {
     private Level[] levels;
 
@@ -23,5 +20,14 @@ public class ParkingLot {
             }
         }
         return false;
+    }
+
+    public void print() {
+        for (int i = 0; i < levels.length; i++) {
+            System.out.print("Level" + i + ": ");
+            levels[i].print();
+            System.out.println("");
+        }
+        System.out.println("");
     }
 }
